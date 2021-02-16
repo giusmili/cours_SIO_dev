@@ -32,3 +32,4 @@ h1, h2, h3, h4,h5, p, ul, ol, dl, dd, dt, figure, h6{ /* contexte css */
     list-style: none;
 }
 ```
+&copy; developer - school - 2021
