@@ -1,0 +1,98 @@
+/* 
+reset
+transformer les px en rem
+16px mult 62.5% = 1.000 rem
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+html{                   /* séléctionner l'élément. La propriété, la valeur */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Open Sans', sans-serif; /* 1.6rem = 16px */
+    margin: 0;
+}
+h1, h2, h3, h4,h5, p, ul, ol, dl, dd, dt, figure, h6{ /* contexte css */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /* cela enlève le soulignement */
+    color: #222;
+}
+
+/* theme */
+header{
+    background-color: #222;
+}
+header > h1{
+    color: #fff;
+    text-align: center;
+    line-height: 6.0rem;
+    font-weight: 400;
+    
+}
+main,footer{
+    max-width: 90.0rem; /* 800 */
+    padding: 1.0rem;/* padding */
+    border: solid 0.1rem transparent; /* bordure */
+    margin: 5.0rem auto 0;
+    background-color: #fafafa;
+    box-shadow: 0 0 1.0rem #999;
+    
+}
+footer *{
+    text-align: center;
+}
+
+section h2, section h3, section h4, section h5, section h6{
+    background-color: rgba(41, 128, 185, .8);
+    padding: .5rem;
+    line-height: 4.5rem;
+    font-weight: 100;
+    color: #fff;
+    font-size: 2.5rem;
+}
+section h2::before, section h3::before, section h4::before, section h5::before{
+    content:'\2714';
+    margin-right:.5rem;
+}
+section h2 a{
+    color: inherit;
+}
+section ul li del{
+    color: rgba(192, 57, 43,1.0);
+}
+section h3{
+    background-color: rgba(192, 57, 43,1.0);
+}
+section h4{
+    background-color: rgb(6, 138, 34);
+}
+section:last-child h6{
+    background-color: #ccc;
+    color: #333;
+    margin-bottom: 0.1rem;
+}
+section p, section ul, section ol, section dl{
+    line-height: 2.5rem;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+}
+figure figcaption p{
+    padding-top: 0.5rem;
+    text-align: justify;/* left, right, center, justify */
+}
+figure figcaption p:first-line{
+    font-size: 2.0rem;
+}
+.cible:target{
+    background-color: rgba(221, 127, 127,1);
+ }
